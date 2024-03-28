@@ -1,6 +1,7 @@
 import { Title, Avatar } from '../components'
 import * as D from '../data'
 import { useOrCreate } from './useOrCreate'
+import { useMemo } from 'react'
 export default function CreateOrUseTest() {
   // prettier-ignore
   const headTexts = useOrCreate<string[]>('headTexts', () => [
